@@ -1,0 +1,330 @@
+// color variables
+$textcolor: #a8611a
+$textcolor2: rgb(12, 110, 253)
+$texthover: rgb(12, 86, 197)
+$textcolor3: #734d15 
+$cream: #ECE6D8 
+$cream2: #eae0ca 
+$green: #6a7740
+@font-face 
+  font-family: 'Standard'
+  src: url('./components/Fonts/OldStandardTT-Regular.ttf')
+@font-face 
+  font-family: 'Standard-bold'
+  src: url('./components/Fonts/OldStandardTT-Bold.ttf')
+@font-face 
+  font-family: 'Prata'
+  src: url('./components/Fonts/Prata-Regular.ttf')
+#root
+  overflow-x: hidden !important
+body
+  color: $textcolor
+  background-color: $cream
+  overflow-x: hidden !important
+  transition-duration: 0.3s !important
+  overflow-y: scroll !important
+  padding-right: 0px !important
+  margin-top: 8.8vh
+
+h1, .designtext
+  color: $textcolor !important
+  font-family: 'Standard-bold'
+h2 
+  font-family: 'Standard-bold'
+h5
+  font-family: 'Prata'
+.shop-header
+.navbar
+  background-color: $cream
+nav
+  border-bottom: 1px solid $cream2
+.nav-link
+  font-family: 'Arial'
+  color: $textcolor !important
+  font-weight: 100 !important
+.navbar-brand
+  font-family: 'Standard-bold'
+// .splash-curtain-row
+//   -webkit-transition: background-image 0.2s linear !important
+//   transition: background-image 0.2s linear !important
+.splash-container
+  transition-duration: 0.4s !important
+  button 
+    font-family: 'Standard-bold'
+    font-size: larger
+    color: white
+  .curtain-heading
+    text-align: start
+    color: #1155c4
+  .curtain-subtext
+    text-shadow: 0px 0px 5px #000000d2
+    font-size: larger
+  .curtain-description
+    font-family: 'Standard'
+    color: #000000c8
+    text-shadow: 1px 2px 4px #ffffff3b
+  .link
+    color: #000000
+.splash-curtain-row
+  height: 90vh
+  position: relative
+.main-header
+  position: absolute
+  top: 5%
+  left: 2%
+  z-index: 1
+  font-family: 'Prata'
+  color: $textcolor2 !important
+.curtain-btn
+  height: 100%
+  wdith: 100%
+  background-color: #77777700
+  border: solid white 0px
+  border-right: solid #ffffff59 1px 
+  color: black
+  transition-duration: 0.2s
+  &:active
+    background-color: #dfdfdfac
+  &:hover
+    background-color: #dfdfdf6f
+    cursor: pointer
+.selected-btn 
+  color: black
+  transition-duration: 0.2s
+  background-color: #ffffff97
+  backdrop-filter: blur(0.2px)
+.link
+  text-decoration: none !important
+.arrivals-container 
+  background-color:$textcolor
+  color: $cream
+.product-img
+  height: auto
+  width: 100%
+.alert-shipping 
+  background-color:$textcolor2
+  color: white
+.about-us-text
+  font-size: large
+.collections-container
+  background-color:$textcolor
+  color: $cream
+  padding-bottom: 8px
+  height: 80vh
+.collection-info-container
+  background-color: #6a77407a
+  padding-left: 20px
+  transition-duration: 0.3s
+  &:hover
+    background-color: $green
+    transition-duration: 0.3s
+  .collections-header
+    color:  white
+    text-shadow: 2px 2px 3px #000000
+    font-family: 'Standard-bold'
+  .collections-subtext
+    text-shadow: 2px 2px 3px black
+    font-size: large
+    font-family: 'Standard-bold'
+    color:  white !important
+  .collections-link
+    font-family: 'Standard-bold'
+    font-weight: 800
+    font-size: x-large
+    color: $cream
+    text-shadow: 2px 2px 3px #494949
+    text-decoration: none
+.collection-item-container1, .collection-item-container2, .collection-item-container3
+  background-size: 230% auto !important
+  height: 65vh
+  transition: background-size 0.3s ease-in-out !important
+  &:hover
+    transition-duration: 0.4s !important
+    background-size: 235% auto !important
+
+
+.footer-title
+  font-family: 'Standard-bold'
+.footer-link
+  color: $textcolor !important
+a:hover 
+  cursor: pointer
+@media (max-width: 1250px) 
+  .collections-row 
+    height: 30vh
+@media (max-width: 991px)
+  .collection-item-container1, .collection-item-container2, .collection-item-container3
+    height: 30vh
+  .collections-container 
+    height: 110vh
+
+.item-card
+  justify-content: center
+  .item-card-inner
+   background-color:  !important
+   min-height: 10vh
+  img
+    display: flex
+    object-fit: scale-down
+    background-image: cover
+    object-fit: cover
+    height: 300px
+    width: 900px
+    border: 1px solid #cab086cf !important
+    transition-delay: 0.1s
+    transition-duration: 0.3s
+    margin-bottom: 5px
+    &:hover
+      transition-delay: 0.1s
+      transition-duration: 0.3s ease
+      transform: scale(1.05)
+  .item-desc
+    font-family: "Standard-bold"
+    color: black
+    font-size: xx-large
+
+.modal-dialog
+  margin-top: 30px
+  justify-content: center !important
+  padding: 0px !important
+  
+.show 
+  padding-right: 0px !important
+
+.product-button, .cart-button
+  background-color: $textcolor2
+  border: 0px 
+  border-radius: 4px
+  color: white
+  transition-duration: 0.3s
+  width: 40%
+  height: 38px
+  margin-left: 10px
+  margin-right: 10px
+  box-shadow: 1px 1px 2px #00000065
+  &:hover
+    background-color: $texthover
+    box-shadow: 0px 1px 2px #00000065
+
+.close-button
+  background-color: #ffffff00
+  border: 1px solid $textcolor2
+  border-radius: 4px
+  color: $textcolor2
+  transition-duration: 0.3s
+  width: 40%
+  height: 38px
+  margin-left: 10px
+  margin-right: 10px
+  box-shadow: 1px 1px 2px #00000065
+  &:hover
+    border: 1px solid $texthover
+    background-color:  $texthover
+    color: white
+    box-shadow: 0px 2px 2px #00000065
+
+.checkout-button
+  background-color: $textcolor2
+  border: 0px 
+  border-radius: 4px
+  color: white
+  transition-duration: 0.3s
+  width: 94%
+  margin-left: 3%
+  margin-right: 3%
+  height: 38px
+  &:hover
+    background-color: $texthover
+
+.shop-img
+  background-color: $cream
+  color: $textcolor
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  height: 15vh
+  width: auto
+  border-bottom: 1px solid grey
+
+.shop-text
+  font-family: 'Outfit-bold'
+  font-size: large
+  color: $textcolor
+  padding-bottom: 9px 
+
+.subscribe
+  font-size: small
+  a
+    
+    color: $textcolor3
+    text-decoration: none
+.fa-lg
+
+  color: $textcolor3
+.small-header-container
+
+.shipping-container
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 999
+  height: 20px
+  .btn-close 
+    padding:0px !important
+    padding-top: 8px !important
+    padding-left: 16px !important
+.modal-content
+  border-radius: 0px
+.modal-title
+  border-bottom: 1px solid #ababab
+.modal-name
+.modal-price
+  font-family: 'Prata'
+.modal-category 
+  font-family: 'Standard'
+.promo-container
+  color: white
+  height: 80vh
+  font-family: 'Outfit' !important
+  text-shadow: 2px 2px 1px  #4b4b4b
+  h1 h2
+    font-family: 'Outfit-bold' !important
+    color: $textcolor2 !important
+  h4
+    font-family: 'Standard' !important
+    b
+      color: #ffffff
+.promo-button
+  background-color: $textcolor2
+  border: 0px 
+  border-radius: 4px
+  color: white
+  font-family: 'Standard-bold'
+  font-size: larger !important
+  transition-duration: 0.2s
+  width: 20%
+  height: 48px
+  box-shadow: 1px 1px 5px #00000065
+  &:hover
+    background-color: #1f61cc
+    box-shadow: 0px 2px 10px #00000065
+    transform: translateY(-3px)
+.checkout-header2
+  border-bottom: 1px solid #b4b4b4
+.checkout-container
+  border-bottom: 1px solid #b4b4b4
+.checkout-list
+
+.checkout-box 
+  background-color: #fff1dc
+  margin-top: 10px
+  margin-bottom: 10px
+  border-bottom: 1px solid #e3e3e3
+.total-container
+  background-color: #fff1dc
+.img-thumbnail
+  height:100px 
+.cc
+  width:50%
+  height: auto
